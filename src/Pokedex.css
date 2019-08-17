@@ -1,0 +1,9 @@
+.Pokedex {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 3em;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    align-content: center;
+}
