@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import './Pokedex.css'
 import Pokecard from './Pokecard';
-import pokemons from './pokemons';
 
 
 class Pokedex extends Component {
+
     render(){
+        const { cards } = this.props;
         return (
             <div className="Pokedex">
-                {pokemons.map((pokemon) => {
-                    return <Pokecard 
-                        name={pokemon.name}
-                        type={pokemon.type}
-                        key={pokemon.id}
-                        img={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`}
-                    />
+                {cards.map((p) => {
+                    return <Pokecard key={p.id} id={p.id} img={p.img} type={p.type} name={p.name} exp={p.base_experience}/>
                 })}
             </div>
         )
