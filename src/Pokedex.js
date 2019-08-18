@@ -4,9 +4,15 @@ import Pokecard from './Pokecard';
 
 
 class Pokedex extends Component {
-
+    
     render(){
         const { cards } = this.props;
+        let exp = cards.map((card) => {
+            return card.base_experience;
+        }).reduce((exp, current) => {
+            return exp + current;
+        });
+        
         return (
             <div className="Pokedex">
                 {cards.map((p) => {

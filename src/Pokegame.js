@@ -24,6 +24,13 @@ function buildDecks(shuffledCards){
     return decks;
 }
 
+function getExp(deck){
+    return deck.map((card) => {
+        return card.base_experience;
+    }).reduce((exp, current) => {
+        return exp + current;
+    });
+}
 const decks = buildDecks(pokecards);
 
 class Pokegame extends Component {
@@ -33,8 +40,8 @@ class Pokegame extends Component {
                {decks.map((deck,index) => {
                    return(
                     <div key={index}>
-                       <h1>Deck {index + 1}</h1>
-                       <Pokedex cards={deck}/>
+                       <h1>Deck {index + 1} Total: {getExp(deck)}</h1>
+                       <Pokedex total={getExp(deck)} cards={deck}/>
                    </div>
                    )
                })}
