@@ -32,9 +32,9 @@ class Pokegame extends Component {
             <div>
                {decks.map((deck,index) => {
                    return(
-                    <div>
+                    <div key={index}>
                        <h1>Deck {index + 1}</h1>
-                       <Pokedex key={index} cards={deck}/>
+                       <Pokedex cards={deck}/>
                    </div>
                    )
                })}
