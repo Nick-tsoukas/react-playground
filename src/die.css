@@ -1,0 +1,9 @@
+.Die-rolling {
+    color : red;
+    transition: all 1s linear;
+    
+}
+
+.Die-notRolling {
+    color: green;
+}

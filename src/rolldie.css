@@ -1,0 +1,13 @@
+.Rolldie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rolldie-button {
+    padding: 1.5em;
+    font-size: 1.2em;
+    background-color: green;
+    color: white;
+}

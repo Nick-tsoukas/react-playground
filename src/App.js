@@ -1,5 +1,6 @@
 import React from 'react';
-import Counter from './Counter';
+
+import Rolldie from './Rolldie';
 
 import './App.css';
 
@@ -9,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      <Rolldie/>
     </div>
   );
 }

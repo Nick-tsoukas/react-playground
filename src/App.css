@@ -17,3 +17,7 @@ html, body, #root {
   height: 100%;
 }
 
+i {
+  font-size: 10em;
+}
+
