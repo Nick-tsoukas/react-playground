@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
 import Pokegame from './Pokegame';
+import Timer from './Timer';
 
 function App() {
   return (
     <div className="App">
-      <Pokegame/>
+      <Timer max={100}/>
+      <Pokegame />
     </div>
   );
 }
