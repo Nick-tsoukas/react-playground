@@ -7,11 +7,14 @@ class Score extends Component {
         this.addKill = this.addKill.bind(this);
 
     }
-    addKill(){
-        this.setState((state) => {
-            return {score: state.score + 1};
-        });
+   
+     incrementScore(curState){
+        return { score: curState.score + 3};
     }
+    addKill(){
+        this.setState(this.incrementScore);
+    }
+
     render(){
         return (
             <div>
