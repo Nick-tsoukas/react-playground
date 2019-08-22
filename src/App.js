@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Rolldie from './Rolldie';
+import Score from './Score';
 
 import './App.css';
 
@@ -10,7 +9,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Rolldie/>
+    <Score/>
     </div>
   );
 }
