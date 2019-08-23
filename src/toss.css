@@ -1,0 +1,21 @@
+.Toss-container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+}
+
+.Toss-button {
+    padding: 1em;
+    font-size: 1.2em;
+    background: tomato;
+    color: white;
+}
