@@ -1,5 +1,5 @@
 import React from 'react';
-import Score from './Score';
+import Lottery from './Lottery';
 
 import './App.css';
 
@@ -9,7 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Score/>
+       <Lottery maxPicks={3} />
+       <Lottery range={10} />
     </div>
   );
 }

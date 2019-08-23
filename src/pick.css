@@ -1,0 +1,7 @@
+.Pick-number {
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: tomato;
+    display: inline-block;
+}
